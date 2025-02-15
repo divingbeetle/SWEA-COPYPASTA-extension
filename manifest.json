@@ -14,7 +14,10 @@
       "matches": [
         "https://swexpertacademy.com/main/code/problem/problemDetail.do*",
         "https://swexpertacademy.com/main/talk/solvingClub/problemView.do*",
-        "https://swexpertacademy.com/main/solvingProblem/solvingProblem.do*"
+        "https://swexpertacademy.com/main/solvingProblem/solvingProblem.do*",
+        "https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do*",
+        "https://swexpertacademy.com/main/code/contestProblem/contestProblemDetail.do*",
+        "https://swexpertacademy.com/main/code/userProblem/userProblemDetail.do*"
       ],
       "js": [
         "content.js"
