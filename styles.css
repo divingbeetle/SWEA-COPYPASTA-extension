@@ -1,0 +1,43 @@
+.test-button {
+  padding: 4px 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.test-button.input {
+  background-color: #28a745;
+}
+
+.test-button.output {
+  background-color: #17a2b8;
+}
+
+.test-button:hover {
+  opacity: 0.9;
+}
+
+.test-notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 24px;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  z-index: 1000;
+}
+
+.test-notification.success {
+  background-color: #28a745;
+}
+
+.test-notification.error {
+  background-color: #dc3545;
+}
+
