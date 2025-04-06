@@ -12,10 +12,6 @@ function showTestNotification(message, type) {
 // Create copy handler
 async function handleCopy(link, type) {
   try {
-    // Prevent SWEA from redirecting
-    event.preventDefault();
-    event.stopPropagation();
-
     if (!link) {
       throw new Error(`${type} link not found`);
     }
@@ -34,6 +30,7 @@ async function handleCopy(link, type) {
 
 function createButton(text, className) {
   const button = document.createElement('button');
+  button.type = 'button';
   button.textContent = text;
   button.className = `test-button ${className}`;
   return button;
