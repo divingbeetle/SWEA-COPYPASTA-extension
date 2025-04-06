@@ -16,6 +16,9 @@ async function handleCopy(link, type) {
       throw new Error(`${type} link not found`);
     }
     const response = await fetch(link.href);
+    if (response.redirected) {
+      throw new Error('세션이 만료되었습니다. 다시 로그인 해주세요.');
+    }
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
